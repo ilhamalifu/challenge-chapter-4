@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body>
+    <div class="row mt-3 d-flex align-items-center justify-content-center">
+      <div class="col-md-1">
+        <svg width="36" height="38" viewBox="0 0 36 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M35.0039 37.8633L0.09375 22.4648V17.4375L35.0039 0V8.4375L10.957 19.582L35.0039 29.4609V37.8633Z" fill="#724C21" />
+        </svg>
+      </div>
+      <div style="margin-left: -70px" class="col-sm-1 justify-content-start"><img style="margin: 0px 27px 0px 27px" class="logo" src="./assets/logo 1.png" alt="logo game" /></div>
+      <div class="col-md-10"><h1 class="judul">ROCK PAPER SCISSORS</h1></div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 player">
+          <div class="row">
+            <div class="col-12 mt-5"><h1>PLAYER 1</h1></div>
+            <div class="col-12">
+              <div id="player-batu" class="hands"><img src="./assets/batu 1.png" alt="batu" /></div>
+            </div>
+            <div class="col-12">
+              <div id="player-kertas" class="hands"><img src="./assets/kertas 1.png" alt="kertas" /></div>
+            </div>
+            <div class="col-12">
+              <div id="player-gunting" class="hands"><img src="./assets/gunting 1.png" alt="gunting" /></div>
+            </div>
+          </div>
+        </div>
+
+        <div id="game-result" class="col-sm-4 d-flex align-items-center justify-content-center">
+          <h1 class="vs-text">VS</h1>
+          <div class="player-result">COM WIN</div>
+          <div class="image-win"></div>
+        </div>
+
+        <div class="col-sm-4 com">
+          <div class="row">
+            <div class="col-12 mt-5"><h1>COM</h1></div>
+            <div class="col-12">
+              <div id="com-batu" class="highlight"><img src="./assets/batu 1.png" alt="batu" /></div>
+            </div>
+            <div class="col-12">
+              <div id="com-kertas"><img src="./assets/kertas 1.png" alt="kertas" /></div>
+            </div>
+            <div class="col-12">
+              <div id="com-gunting"><img src="./assets/gunting 1.png" alt="gunting" /></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div id="reload" class="col-lg-12 d-flex mb-3 justify-content-center"><img src="./assets/refresh 2.png" alt="refresh" /></div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
